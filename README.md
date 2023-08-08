@@ -178,8 +178,6 @@ This packed format is smaller and faster to encode and decode than JSON. If you'
 
 There's a very simple benchmark program in `cmd/benchmark` that compares the performance of JSON to packed. In that example, the packed format is 25x faster and 4x smaller than JSON.
 
-```
-
 ## Why shouldn't you use this?
 
 There are drawbacks. When transmitting packed data, both the sender and recipient need to be aware of the structure of the data. There's no metadata embedded in the encoded data. If the sender and recipient don't agree on the format, the recipient will not be able to make sense of the data.
